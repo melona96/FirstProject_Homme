@@ -79,11 +79,7 @@
 						<a href="qna_form" class="flex-c-m trans-04 p-lr-25">
 							QnA
 						</a>
-						
-						<a href="qna_test" class="flex-c-m trans-04 p-lr-25">
-							qnaTest
-						</a>
-						
+	
 					</div>
 				</c:when>
 				<c:otherwise>

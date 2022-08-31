@@ -28,8 +28,8 @@
 										</div>
 									</td>
 									<td class="column-2"> ${cartVO.pname }</td>
-									<td class="column-3"> ${cartVO.price }</td>
-									<td class="column-3"> <input type="hidden" name="psize" value="${cartVO.psize }">${cartVO.psize }</td>
+									<td class="column-3"><fmt:formatNumber value="${cartVO.price }" pattern="#,###" />₩</td>
+									<td class="column-3"><input type="hidden" name="psize" value="${cartVO.psize }">${cartVO.psize }</td>
 									<td class="column-4">
 										<div class="wrap-num-product flex-w m-l-auto m-r-0">
 											<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
@@ -43,7 +43,7 @@
 											</div>
 										</div>
 									</td>
-									<td class="column-5">${cartVO.price * cartVO.quantity}</td>
+									<td class="column-5"><fmt:formatNumber value="${cartVO.price * cartVO.quantity}" pattern="#,###" />₩</td>
 								</tr>
 								</c:forEach>
 								
@@ -82,7 +82,7 @@
 
 							<div class="size-209">
 								<span class="mtext-110 cl2">
-									${totalPrice }
+									<fmt:formatNumber value="${totalPrice}" pattern="#,###" />₩
 								</span>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 
 							<div class="size-209 p-t-1">
 								<span class="mtext-110 cl2">
-									${totalPrice }
+									<fmt:formatNumber value="${totalPrice}" pattern="#,###" />₩
 								</span>
 							</div>
 						</div>

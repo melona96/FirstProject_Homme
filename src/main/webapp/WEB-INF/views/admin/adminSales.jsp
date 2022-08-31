@@ -110,7 +110,7 @@
                                     <td>${orderVO.oseq }</td>
                                     <td>${orderVO.id }</td>
                                     <td>${orderVO.pname }</td>
-                                    <td>${orderVO.price }</td>
+                                    <td><fmt:formatNumber value="${orderVO.price}" pattern="#,###" />₩</td>
                                     <td><fmt:formatDate pattern="yyyy-MM-dd" value="${orderVO.indate}"/></td> 
                                     <td><a class="btn btn-sm btn-primary" href="admin_order_detail?oseq=${orderVO.oseq}">주문상세</a></td>
                                 </tr>

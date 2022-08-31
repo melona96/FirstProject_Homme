@@ -304,7 +304,7 @@
 							</a>
 
 							<span class="header-cart-item-info">
-								${cartVO.price}
+							<fmt:formatNumber value="${cartVO.price}" pattern="#,###" />₩
 							</span>
 						</div>
 					</li>
@@ -312,7 +312,7 @@
 				</c:forEach>
 				<div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
-						Total: ${totalPrice }
+					    Total: <fmt:formatNumber value="${totalPrice}" pattern="#,###"/>₩
 					</div>
 					<div class="header-cart-buttons flex-w w-full">
 						<a href="cart_list" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">

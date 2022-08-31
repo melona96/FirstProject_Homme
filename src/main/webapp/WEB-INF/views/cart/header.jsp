@@ -80,9 +80,7 @@
 							QnA
 						</a>
 						
-						<a href="qna_test" class="flex-c-m trans-04 p-lr-25">
-							qnaTest
-						</a>
+						
 						
 					</div>
 				</c:when>
@@ -116,11 +114,11 @@
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
 						<ul class="main-menu">
-							<li>
+							<li class="active-menu">
 								<a href="index">Home</a>
 							</li>
 
-							<li class="active-menu">
+							<li>
 								<a href="productList">Shop</a>
 							</li>
 						</ul>
@@ -279,16 +277,16 @@
 				
 				<div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
-						장바구니가 비었습니다.
+						로그인이 필요합니다.
 					</div>
 					
 					<div class="header-cart-buttons flex-w w-full">
-						<a href="cart_list" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							장바구니 보기
+						<a href="join_form" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+							회원가입
 						</a>
 
-						<a href="#" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							구매하기
+						<a href="login_form" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+							로그인
 						</a>
 					</div>
 				</div>
@@ -306,7 +304,7 @@
 							</a>
 
 							<span class="header-cart-item-info">
-								${cartVO.price}
+							<fmt:formatNumber value="${cartVO.price}" pattern="#,###" />₩
 							</span>
 						</div>
 					</li>
@@ -314,15 +312,15 @@
 				</c:forEach>
 				<div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
-						Total: ${totalPrice }
+					    Total: <fmt:formatNumber value="${totalPrice}" pattern="#,###"/>₩
 					</div>
 					<div class="header-cart-buttons flex-w w-full">
 						<a href="cart_list" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
 							장바구니 보기
 						</a>
 
-						<a href="delete_cart_list" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							장바구니 비우기
+						<a href="#" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+							구매하기
 						</a>
 					</div>
 				</div>

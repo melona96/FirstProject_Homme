@@ -111,14 +111,14 @@
                                     <td>${orderVO.pname }</td>
                                     <td>${orderVO.psize }</td>
                                     <td>${orderVO.quantity }</td>
-                                    <td>${orderVO.price }</td>
+                                    <td><fmt:formatNumber value="${orderVO.price}" pattern="#,###" />₩</td>
                                     <td><fmt:formatDate pattern="yyyy-MM-dd" value="${orderVO.indate}"/></td>     
                                 </tr>
                                </c:forEach>
                             </tbody>
                         </table>
                         <br>
-                        <h6 class="mb-0">결제금액 : ${orderPrice }</h6>
+                        <h6 class="mb-0">결제금액 : <fmt:formatNumber value="${orderPrice}" pattern="#,###" />₩</h6>
                     </div>
                 </div>
             </div>

@@ -229,7 +229,7 @@
 								</a>
 
 								<span class="stext-105 cl3">
-									${productVO.price}
+									<fmt:formatNumber value="${productVO.price}" pattern="#,###" />₩
 								</span>
 							</div>
 						</div>

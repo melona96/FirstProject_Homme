@@ -54,12 +54,12 @@
                                         <td>${orderVO.pname }</td>
                                         <td>${orderVO.psize }</td>
                                         <td>${orderVO.quantity }</td>
-                                        <td>${orderVO.price }</td>
+                                        <td><fmt:formatNumber value="${orderVO.price}" pattern="#,###" />₩</td>
                                         <td><fmt:formatDate value="${orderVO.indate}" type="date"/></td>
                                     </tr>
 
                                    </c:forEach>
-                                   <td>결제금액 : ${orderPrice }</td>
+                                   <td>결제금액 : <fmt:formatNumber value="${orderPrice}" pattern="#,###" />₩</td>
                                 </tbody>
                                 
                             </table>

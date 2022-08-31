@@ -50,7 +50,7 @@
                                     <tr>
                                     	<td>${orderVO.oseq }</td>
                                         <td><a href="order_detail?oseq=${orderVO.oseq }" style="color: black;">${orderVO.pname }</a></td>
-                                        <td>${orderVO.price }</td>
+                                        <td><fmt:formatNumber value="${orderVO.price}" pattern="#,###" />₩</td>
                                         <td><fmt:formatDate value="${orderVO.indate}" type="date"/></td>
                                         <td><a class="btn btn-sm btn-primary" href="order_detail?oseq=${orderVO.oseq }">상세보기</a></td>
                                     </tr>

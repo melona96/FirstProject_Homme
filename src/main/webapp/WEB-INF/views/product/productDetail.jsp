@@ -54,7 +54,7 @@
 						</h4>
 
 						<span class="mtext-106 cl2">
-							${productVO.price}
+							<fmt:formatNumber value="${productVO.price}" pattern="#,###" />₩
 						</span>
 
 						<p class="stext-102 cl3 p-t-23">

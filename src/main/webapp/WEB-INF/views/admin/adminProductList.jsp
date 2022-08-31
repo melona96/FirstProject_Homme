@@ -115,7 +115,7 @@
                                     <td>${productVO.pseq }</td>
                                     <td>${productVO.name }</td>
                                     <td>${productVO.kind }</td>
-                                    <td>${productVO.price }</td>
+                                    <td><fmt:formatNumber value="${productVO.price}" pattern="#,###" />₩</td>
                                     <td>${productVO.psize }</td>
                                     <td><fmt:formatDate pattern="yyyy-MM-dd" value="${productVO.regdate}"/></td>
                                     
