@@ -43,9 +43,9 @@
                            	 </table>
                        	 </div>
                        	 
-                    <!--  <tr><td colspan="6" style="text-align: center;"> ${paging} </td></tr>-->
+                   <!-- 페이징 기능 구현 -->
                     <div style="display: flex; justify-content: center;">
-                   	<ul class="pagination">    <!-- li태그의 클래스에 disabled를 넣으면 마우스를 위에 올렸을 때 클릭 금지 마크가 나오고 클릭도 되지 않는다.-->    <!-- disabled의 의미는 앞의 페이지가 존재하지 않다는 뜻이다. -->    
+                   	<ul class="pagination">   
                    		<li>
                    		<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="index">
 							<a href="qna_form${pageMaker.makeQuery(index)}">[${index}]</a>
@@ -57,10 +57,10 @@
 						 
                     </div>
                     <div style="display: flex; justify-content: flex-start;">&nbsp;&nbsp;&nbsp;
-                    <button type="button" class="btn btn-secondary" style="clear: both;  margin-top: 10px; display:flex; justify-content: flex-start;" onclick="location.href='qna_write_form'">글쓰기</button>
+                    	<button type="button" class="btn btn-secondary" style="clear: both;  margin-top: 10px; display:flex; justify-content: flex-start;" onclick="location.href='qna_write_form'">글쓰기</button>
                     </div>
            	</div> 	
     </div>
-           </section>
+</section>
 
 <%@ include file="footer.jsp" %>

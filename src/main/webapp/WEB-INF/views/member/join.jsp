@@ -50,18 +50,7 @@
 									</div>
 								</div>
 
-								<!--  
-								<div class="form-group">
-									<label for="address">주소</label>
-									<input type="button" value="주소 찾기"  class="btn btn-primary btn-block" style="width: 85px; height: 35px; clear: both; font-size:12px" onclick="post_zip()" >
-									<input id="text" type="text" class="form-control" name="zip_num" required placeholder="우편번호" style="width: 130px">
-									<input type="text" name="addr1" class="form-control" required placeholder="기본주소">
-									<input type="text" name="addr2" class="form-control" required placeholder="나머지주소">
-									<div class="invalid-feedback">
-										주소를 입력해주세요.
-									</div>
-								</div>
-								-->
+								<!-- API를 활용한 주소 찾기 기능 -->
 								<div class="form-group">
 									<label for="addtest">주소</label>
 									<input type="text" id="postcode" name="postcode" placeholder="우편번호">

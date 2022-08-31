@@ -111,6 +111,7 @@
 				</div>
 			</div>
 
+			<!-- 상품에 대한 댓글 기능 구현 -->
 			<div class="bor10 m-t-50 p-t-43 p-b-40">
 				<!-- Tab01 -->
 				<div class="tab01">
@@ -188,8 +189,4 @@
 			</span>
 		</div>
 	</section>
-
-
-	<!-- Related Products -->
-	
 <%@ include file="footer.jsp" %>
